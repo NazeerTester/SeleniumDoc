@@ -1,0 +1,46 @@
+Top Test Automation Framework Interview Questions for SDETs
+
+1) How do you calculate ROI for Test Automation?
+
+Ans:. To calculate Automation ROI first you need to calculate the Manual Execution time of your test case. This value can be updated in your Test Management Tool.
+
+You can use the formula to calculate ROI:
+
+Time Saved by Automation = Manual Execution Time - Automation Execution Time
+
+Automation ROI = Time Saved by Automation / Investment
+
+Investment = time required to build frameworks + maintenance cost + (time to code one tests X number of tests)
+
+2) Explain the challenges you faced while designing Framework?
+
+Ans: Trying to share a scenario while you were automating stuff, would add value here, but if you still want a reference use below:
+
+You are working on some service API testing and you are unable to perform the automation as you don't have access to some component, in that you can come up with an idea to create a mocking service integrated to your framework
+
+OR
+
+There is a banking application which is session based, after it detects inactivity the user is logged out or within a fixed session time. But we have certain number of scenarios which we needed to test before the application is logged out.
+
+These examples can be used as a challenging scenario and then provide a solution for the problem.
+
+3) What is the reporting structure you use in your framework?
+
+Ans: We are using extent reports and its configured within a BaseTest or MainTest class file using which whenever a test is executed or failed or skipped can be captured. We have setup a ThreadPool for the extent reports object which even helps in case of parallel execution.
+
+We are also recording screenshots and logs if required within our child Test classes. This one of the easiest approach to implement and scale the reporting within our frameworks. I have also implemented TestNG listeners known ITestListener to trigger the reports but it is less customisable as compared to the above way!
+
+
+4) Have you worked on automation framework design from scratch?
+
+Ans: This is a very important question and you should be completely honest with this answer, if you designed some framework then do explain what was the design patterns you have used and what all libraries you have integrated to design your framework.
+
+You can find answer for this question in my Question Bank attached below!
+
+5) How your team managing Automation Test Suites?
+
+In our team we basically use Groups in TestNG to manage different Test Suites like Sanity, Regression.
+
+TestNG allows us to perform sophisticated groupings of test methods Example:
+
+@Test(groups={"sanitytests","regressiontests"}

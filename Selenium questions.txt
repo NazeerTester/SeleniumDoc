@@ -1,0 +1,35 @@
+public  int nazeer(int a ,int b){
+
+
+}
+
+public static void (Strings args[]){
+
+}
+
+int i =10;
+
+sout
+
+i =20;
+
+sout
+
+String nazeer;
+nazeer = "John";
+
+String nazeer = john;
+
+
+Local variable
+
+int a;
+
+methodjohn(){
+
+int a=23;
+
+}
+
+Static int a=23;
+
